@@ -1,3 +1,9 @@
+/**
+    @file smaller.cpp
+    @author Evan Lu
+    @date 01/26/2023
+*/
+
 #include <iostream> 
 
 int main(){
