@@ -26,6 +26,9 @@ int main(){
     } else if(first < third){
         std::cout << "The smallest number is: " << first;
     }
+    else{
+        std::cout << "The smallest number is: " << third;
+    }
 
     return 0; 
 }
