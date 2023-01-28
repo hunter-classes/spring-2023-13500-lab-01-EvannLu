@@ -24,7 +24,7 @@ int main(){
     int miles = 100; 
     float gallonsNeeded = miles / milesPerGallon;
     float totalPrice = gallonsNeeded * pricePerGallon; 
-    std::cout << "The price to drive 100 miles is: " << totalPrice << " per 100 miles" << std::endl;
+    std::cout << "The price to drive 100 miles is: " << totalPrice << std::endl;
 
     float currentPosMile = numGallons * milesPerGallon;
     std::cout << "Possible miles with current gas: " << currentPosMile << std::endl;
