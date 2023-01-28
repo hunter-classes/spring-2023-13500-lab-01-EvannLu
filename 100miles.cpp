@@ -13,25 +13,21 @@ int main(){
     std::cout << "Enter the number of gallons of gas in the tank: ";
     std::cin >> numGallons; 
 
-    double milesPerGallon; 
+    float milesPerGallon; 
     std::cout << "Enter the fuel efficiency in miles per gallon: ";
     std::cin >> milesPerGallon;
 
-    double pricePerGallon; 
+    float pricePerGallon; 
     std::cout << "Enter the price of gas per gallon: ";
     std::cin >> pricePerGallon; 
 
     int miles = 100; 
-    double gallonsNeeded = miles / milesPerGallon;
-    int totalPrice = gallonsNeeded * pricePerGallon; 
-    std::cout << "The price to drive 100 miles is: " << totalPrice << std::endl;
+    float gallonsNeeded = miles / milesPerGallon;
+    float totalPrice = gallonsNeeded * pricePerGallon; 
+    std::cout << "The price to drive 100 miles is: " << totalPrice << " per 100 miles" << std::endl;
 
-    int currentPosMile; 
-    currentPosMile = numGallons * milesPerGallon;
+    float currentPosMile = numGallons * milesPerGallon;
     std::cout << "Possible miles with current gas: " << currentPosMile << std::endl;
-
-    
-
 
     return 0;
 }
