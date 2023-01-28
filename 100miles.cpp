@@ -30,12 +30,12 @@ int main(){
     gallons_needed = miles / miles_per_gallon;
     int total_price;
     total_price = gallons_needed * price_per_gallon;
-    std::cout << "The price of gas to drive 100 miles: " << total_price << std::endl; 
+    std::cout << total_price << std::endl; 
     
     //Find out how many miles can drive with my current gas level?
     int miles_possible;
     miles_possible = num_gallons * miles_per_gallon;
-    std::cout << "Miles I can drive with my current gas: " << miles_possible << std::endl;  
+    std::cout << miles_possible << std::endl;  
 
     return 0;
 }
