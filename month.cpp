@@ -8,7 +8,7 @@ Assignment: Task D. Number of days in a given month
 #include <iostream>
 
 int main(){
-    int year, month, day; 
+    int year, month, days; 
 
     std::cout << "Enter year: ";
     std::cin >> year;
@@ -16,25 +16,32 @@ int main(){
     std::cout << "Enter month: "; 
     std::cin >> month; 
 
-    if(month == 2){
+    if((month % 2 == 1) and month < 8){
+        days = 31; 
+    }
+    //From Jan to July, odd first then even.
+    //From Aug to Dec, even first then odd. 
+    else if((month % 2 == 0) and month > 7){
+        days = 31;
+    }
+    else if(month == 2){
         if((year % 4) != 0){
-            day = 28;
-        } else if((year % 100) != 0){
-            day = 29; 
-        } else if((year % 400) != 0){
-            day = 28;
-        } else {
-            day = 29;
+            days = 28;
+        }
+        else if((year % 100) != 0){
+            days = 29;
+        }
+        else if((year % 400) != 0){
+            days = 28;
+        }
+        else{
+            days =29;
         }
     }
-
-    if(month == 4 || month == 6 || month == 9 || month == 11){
-        day = 30;
-    } else {
-        day = 31;
+    else{
+        days = 30;
     }
 
-    std::cout << day << std::endl;
-    
-    return 0; 
+    std::cout << days;
+    return 0;
 }
