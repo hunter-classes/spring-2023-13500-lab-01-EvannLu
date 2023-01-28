@@ -13,6 +13,7 @@ int main(){
     std::cout << "Enter the number of gallons of gas in the tank: ";
     std::cin >> numGallons; 
 
+    //User inputs the amount of mile the car can travel per gallon
     float milesPerGallon; 
     std::cout << "Enter the fuel efficiency in miles per gallon: ";
     std::cin >> milesPerGallon;
@@ -21,6 +22,11 @@ int main(){
     std::cout << "Enter the price of gas per gallon: ";
     std::cin >> pricePerGallon; 
 
+    //To find the price of 100 mile cose of gas, 
+    //Need to calculate the gallon used in 100 miles. 
+    //Assume we say the 5 miles per gallon is our fuel efficiency, 
+    //Then the gallon we need to travel 100 miles is 100/5 = 20 gallons. 
+    //Mulitply the gallon by price to get the total price. 
     int miles = 100; 
     float gallonsNeeded = miles / milesPerGallon;
     float totalPrice = gallonsNeeded * pricePerGallon; 
